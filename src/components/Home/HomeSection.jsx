@@ -1,7 +1,7 @@
 import React from "react";
-import "./Home.scss";
+import "./HomeSection.scss";
 import { Link } from "react-router-dom";
-function Home() {
+function HomeSection() {
   return (
     <div className="home-section">
       <div className="home-section__headerWrapper">
@@ -29,4 +29,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default HomeSection;
