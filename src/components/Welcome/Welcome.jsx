@@ -3,15 +3,21 @@ import Hair from "../../assets/images/haircare_welcome_back.png";
 import Skincare from "../../assets/images/skincare_welcome_back.png";
 import Bath from "../../assets/images/bath_welcome_back.png";
 import BackArrow from "../../assets/images/backarrow.svg";
+import { useNavigate } from "react-router-dom";
 import "./Welcome.scss";
 
 function Welcome() {
+
+    const navigate = useNavigate()
+
+    const goBack = () =>{ navigate(-1)}
   return (
     <div className="welcome-section">
       <h1 className="welcome-section__header">Pick your category</h1>
 
       <div className="welcome-section__card-container">
-        <div className="welcome-section__backArrow-wrapper">
+        
+        <div onClick={goBack} className="welcome-section__backArrow-wrapper">
           <img src={BackArrow} alt="" />
           <p className="welcome-section__back">Back</p>
         </div>
