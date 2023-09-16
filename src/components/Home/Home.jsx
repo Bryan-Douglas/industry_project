@@ -21,7 +21,7 @@ function Home() {
       <div className="home-section__buttonWrapper">
         <button className="home-section__button">START</button>
       </div>
-      <p className="home-section__text">Existing routine</p>
+      <p className="home-section__text home-section__text--underline ">Existing routine</p>
     </div>
   );
 }
