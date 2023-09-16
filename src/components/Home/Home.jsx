@@ -1,5 +1,6 @@
 import React from "react";
 import "./Home.scss";
+import { Link } from "react-router-dom";
 function Home() {
   return (
     <div className="home-section">
@@ -19,7 +20,9 @@ function Home() {
         </p>
       </div>
       <div className="home-section__buttonWrapper">
+        <Link to="/welcome">
         <button className="home-section__button">START</button>
+        </Link>
       </div>
       <p className="home-section__text home-section__text--underline ">Existing routine</p>
     </div>

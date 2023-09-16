@@ -1,7 +1,7 @@
 @use "../../styles/fonts" as *;
 
 .home-section {
-  background-image: url("../../assets/home-background.png");
+  background-image: url("../../assets/images/home-background.png");
   background-position: center;
   background-repeat: no-repeat;
   text-align: center;
@@ -47,6 +47,7 @@
     width: 53rem;
     margin-top: 1.5rem;
     line-height: 26px;
+    font-family: 'Roboto Light';
 
     &--underline{
         text-decoration: underline;
