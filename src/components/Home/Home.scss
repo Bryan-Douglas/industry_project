@@ -1,0 +1,40 @@
+@use "../../styles/fonts" as *;
+
+.home-section {
+  background-image: url("../../assets/home-background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  height: 834px;
+  max-width: 1194px;
+  margin: 0 auto;
+
+  &__headerWrapper {
+    padding-top: 5rem;
+  }
+  &__header {
+    font-family: "Lush Handwritten WLat";
+    font-size: 96px;
+  }
+
+  &__subheaderWrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__subheader {
+    font-size: 56px;
+    width: 50rem;
+    font-family: 'Roboto Bold';
+
+  }
+
+  &__textWrapper {
+    display: flex;
+    justify-content: center;
+  }
+  &__text {
+    font-size: 26px;
+    width: 53rem;
+  }
+}

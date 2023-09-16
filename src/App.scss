@@ -1,4 +1,19 @@
 body{
-  font-family: 'Helvetica Neue';
+  font-family: 'Roboto Regular';
   font-weight: bold;
+ 
+}
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+ 
+}
+
+
+.content__wrapper{
+  overflow-x: hidden;
+  max-width: 1194px;
+
 }
