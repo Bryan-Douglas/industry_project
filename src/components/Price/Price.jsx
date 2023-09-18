@@ -2,6 +2,7 @@ import React from "react";
 import "./Price.scss";
 import BackArrow from "../../assets/images/backarrow.svg";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Price() {
   const navigate = useNavigate();
@@ -18,7 +19,9 @@ function Price() {
         </div>
         <ul className="price-section__list-container">
           <li className="price-section__list-item">$5-10</li>
+          <Link to="/results">
           <li className="price-section__list-item">$10-25</li>
+          </Link>
           <li className="price-section__list-item">$25-50</li>
           <li className="price-section__list-item">$50-100</li>
         </ul>
