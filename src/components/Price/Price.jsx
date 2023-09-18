@@ -15,7 +15,7 @@ function Price() {
         <img src={BackArrow} alt="back arrow" />
         <p className="skin-section__arrow-text">Back</p>
       </div>
-      <div className="price-secion__content-wrapper">
+      <div className="price-section__content-wrapper">
         <h1 className="price-section__header">Price point?</h1>
 
         <div className="price-section__wrapper">
