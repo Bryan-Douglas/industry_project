@@ -1,14 +1,20 @@
-.skin-section{
+.skin-section {
+  &__image--radius {
+    border-radius: 100px;
+    height: 192px;
+  }
+  &__subtitle {
+    text-align: center;
+    color: #808080;
+    font-size: 30px;
+    padding-top: 2px;
+  }
 
-    &__image--radius{
-        border-radius: 100px;
-        height: 192px;
-    }
-    &__subtitle{
-        text-align: center;
-        color: #808080;
-        font-size: 30px;
-        padding-top: 2px;
-    }
-
+  &__cards-container__needs {
+    display: flex;
+    flex-wrap: wrap;
+    width: 79%;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+  }
 }
