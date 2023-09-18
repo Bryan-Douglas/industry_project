@@ -7,6 +7,7 @@ import SkinNeeds from './components/SkinNeeds/SkinNeeds';
 import Scent from './components/Scent/Scent';
 import Price from './components/Price/Price';
 import Results from './components/Results/Results';
+import Recommendations from './components/Recommendations/Recommendations';
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
       <Route path="/scent" element={<Scent   />} />
       <Route path="/price" element={<Price  />} />
       <Route path="/results" element={<Results />} />
+      <Route path="/recommendations" element={<Recommendations />} />
     </Routes>
     </BrowserRouter>
     </div>

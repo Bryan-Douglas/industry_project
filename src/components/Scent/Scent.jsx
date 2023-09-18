@@ -22,7 +22,7 @@ function Scent() {
     </div>
     <div className="skin-section__content-wrapper">
       <h1 className="skin-section__header">
-       What are your skin needs?
+       What's your favorite scent?
        <p className="skin-section__subtitle">Choose 2 or more</p>
       </h1>
       <div className="skin-section__cards-container__needs">
@@ -50,7 +50,7 @@ function Scent() {
         
       </div>
     </div>
-    <Link to="/scent">
+    <Link to="/price">
       <div className="skin-section__arrow-wrapper">
         <img src={NextArrow} alt="next arrow" />
         <p className="skin-section__arrow-text">Next</p>
