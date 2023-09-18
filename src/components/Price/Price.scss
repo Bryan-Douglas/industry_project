@@ -2,16 +2,17 @@
 
 .price-section{
     margin-top: 10rem;
-    // display: flex;
+    display: flex;
     // flex-direction: column;
-    // align-items: center;
+    align-items: center;
+    justify-content: space-evenly;
 
 
 &__list-container{
     margin-top: 2rem;
-     display: flex;
-    flex-direction: column;
-    align-items: center;
+    //  display: flex;
+    // flex-direction: column;
+    // align-items: center;
   
  
 }
