@@ -1,7 +1,7 @@
 import React from "react";
 import Almonds from "../../assets/images/recommendations/almonds_recommendations.png";
 import Avocado from "../../assets/images/recommendations/avocado_recommendations.png";
-import Butter from "../../assets/images/recommendations/butter_recommendations.png";
+import SheaButter from "../../assets/images/recommendations/butter_recommendations.png";
 import Cinnamon from "../../assets/images/recommendations/cinnamon_recommendations.png";
 import Honey from "../../assets/images/recommendations/honey_recommendations.png";
 import PumpkinMask from "../../assets/images/recommendations/pumpkin_recommendations.png";
@@ -10,11 +10,13 @@ import Rose from "../../assets/images/recommendations/rose_recommendations.png";
 import RedRose from "../../assets/images/recommendations/rose2_recommendations.png";
 import SkinDrink from "../../assets/images/recommendations/skin_recommendations.png";
 import UltraBland from "../../assets/images/recommendations/ultrabland_recommendations.png";
+import Sunflower from "../../assets/images/recommendations/sunflower.png";
 import BackArrow from "../../assets/images/backarrow.svg";
 import NextArrow from "../../assets/images/nextarrow.svg";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import './Recommendations.scss'
+import Skin from "../Skin/SkinSection";
 function Recommendations() {
     const navigate = useNavigate();
     const goBack = () => {
@@ -31,7 +33,7 @@ function Recommendations() {
         <h1 className="recommendations-section__header">
           Your personal routine
         </h1>
-        <p className="recommendations-section__text--lightUnderline">Take quiz again</p>
+        <p className="recommendations-section__text--light recommendations-section__text--lightUnderline">Take quiz again</p>
       </div>
       <div className="recommendations-section__card-container">
         <div className="recommendations-section__card">
@@ -68,7 +70,7 @@ function Recommendations() {
             <img src={PumpkinMask} alt="Ultrabland cleanser" className="recommendations-section__main-image" />
             <div className="recommendations-section__productNameWrapper">
             <h3 className="recommendations-section__productName">MR Pumpkin Face</h3>
-            <p className="recommendations-section__text--light">Mask</p>
+            <p className="recommendations-section__text--light">MASK</p>
             </div>
             <div className="recommendations-section__briefDesc">
                 <p className="recommendations-section__text">Rich hydration for dry skin</p>
@@ -86,7 +88,7 @@ function Recommendations() {
                     <p className="recommendations-section__text--small recommendations-section__text--light">Pumpkin</p>
                     </div>
                     <div className="recommendations-section__imageWrapper">
-                    <img src={Pumpkin} alt="sunflower" className="recommendations-section__image" />
+                    <img src={Sunflower} alt="sunflower" className="recommendations-section__image" />
                     <p className="recommendations-section__text--small recommendations-section__text--light">Sunflower</p>
                     </div>
                 </div>
@@ -94,7 +96,7 @@ function Recommendations() {
         </div>
         <div className="recommendations-section__card">
             <h2 className="recommendations-section__subheader">Step 3</h2>
-            <img src={PumpkinMask} alt="Ultrabland cleanser" className="recommendations-section__main-image" />
+            <img src={SkinDrink} alt="Ultrabland cleanser" className="recommendations-section__main-image" />
             <div className="recommendations-section__productNameWrapper">
             <h3 className="recommendations-section__productName">Skin Drink</h3>
             <p className="recommendations-section__text--light">MOISTURIZER</p>
@@ -115,7 +117,7 @@ function Recommendations() {
                     <p className="recommendations-section__text--small recommendations-section__text--light">Rose</p>
                     </div>
                     <div className="recommendations-section__imageWrapper">
-                    <img src={RedRose} alt="Shea butter" className="recommendations-section__image" />
+                    <img src={SheaButter} alt="Shea butter" className="recommendations-section__image" />
                     <p className="recommendations-section__text--small recommendations-section__text--light">Shea</p>
                     </div>
                 </div>
