@@ -2,6 +2,7 @@ import React from "react";
 import "./SkinSection.scss";
 import BackArrow from "../../assets/images/backarrow.svg";
 import { useNavigate } from "react-router-dom";
+import CustomProgressBar from "../ProgessBar/ProgressBar";
 
 function Skin() {
   const navigate = useNavigate();
