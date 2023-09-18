@@ -7,6 +7,7 @@ import Dry from '../../assets/images/skin-concerns/dry_skin_concerns.png';
 import Dull from '../../assets/images/skin-concerns/dull_skin_concerns.png';
 import Sensitive from '../../assets/images/skin-concerns/sensitivity_concerns.png';
 import Texture from '../../assets/images/skin-concerns/texture_concerns.png';
+import { Link } from 'react-router-dom';
 
 import NextArrow from "../../assets/images/nextarrow.svg";
 
@@ -43,10 +44,12 @@ function SkinNeeds() {
         <img src={Dry} className="skin-section__image--radius"></img>
           <p className="skin-section__subheader">Oily</p>
         </div>
+        <Link to="/scent">
         <div  className="skin-section__arrow-wrapper">
           <img src={NextArrow} alt="next arrow" />
           <p className="skin-section__arrow-text">Next</p>
         </div>
+        </Link>
       </div>
       <div className="skin-section__card-container--bottom">
         <div className="skin-section__card">
