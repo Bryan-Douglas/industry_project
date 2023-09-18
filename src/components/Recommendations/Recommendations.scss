@@ -2,11 +2,14 @@
 
 
 .recommendations-section{
-    margin-top: 2rem;
+    margin-top: rem;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    padding: 46px;
+    padding: 46px ;
+    padding-bottom: 2rem;
+
+
 
 
     &__container{
@@ -107,5 +110,36 @@
         & >*{
             flex-grow: 1;
         }
+    }
+    &__addCart{
+        height: 60px;
+        width: 60px;
+        
+    }
+
+    &__cartWrapper{
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 1rem;
+    }
+
+    &__button-wrapper{
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    &__button{
+        width: 20rem;
+        height: 2rem;
+        background-color: $buttonBackground;
+        color: white;
+        font-size: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        letter-spacing: 2.4px;
+        padding-bottom: 2rem;
+        padding-top: 2rem;
     }
 }
