@@ -2,6 +2,10 @@ import React from "react";
 import "./SkinSection.scss";
 import BackArrow from "../../assets/images/backarrow.svg";
 import { useNavigate } from "react-router-dom";
+import NormalSkin from '../../assets/images/normal_skin-type.svg';
+import SensitiveSkin from '../../assets/images/sensitive_skin-type.svg';
+import DrySkin from '../../assets/images/dry_skin-type.svg';
+
 
 function Skin() {
   const navigate = useNavigate();
@@ -22,25 +26,25 @@ function Skin() {
         </div>
       
         <div className="skin-section__card">
-          <div className="skin-section__circle"></div>
+          <img src={DrySkin} className="skin-section__image"></img>
           <p className="skin-section__subheader">Dry</p>
         </div>
         <div className="skin-section__card">
-          <div className="skin-section__circle"></div>
+        <img src={NormalSkin} className="skin-section__image"></img>
           <p className="skin-section__subheader">Normal</p>
         </div>
         <div className="skin-section__card">
-          <div className="skin-section__circle"></div>
+        <img src={DrySkin} className="skin-section__image"></img>
           <p className="skin-section__subheader">Oily</p>
         </div>
       </div>
       <div className="skin-section__card-container--bottom">
         <div className="skin-section__card">
-          <div className="skin-section__circle"></div>
+        <img src={SensitiveSkin} className="skin-section__image"></img>
           <p className="skin-section__subheader">Sensitive</p>
         </div>
         <div className="skin-section__card">
-          <div className="skin-section__circle"></div>
+        <img src={DrySkin} className="skin-section__image"></img>
           <p className="skin-section__subheader">Combination</p>
         </div>
       </div>
@@ -50,3 +54,6 @@ function Skin() {
 }
 
 export default Skin;
+
+
+
