@@ -1,0 +1,81 @@
+@use '../../styles/variables' as *;
+
+
+.recommendations-section{
+    margin-top: 2rem;
+    // display: flex;
+    // align-items: center;
+    // justify-content: space-evenly;
+
+    &__card-container{
+        margin-top: 2rem;
+    }
+
+    &__header-wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__header{
+        font-size: 40px;
+        color: $buttonBackground;
+        font-family: 'Roboto Bold';
+
+    }
+
+    &__text--light{
+        font-size: 22px;
+       
+        color: $grayFontColor;
+
+        
+    }
+
+    &__text--lightUnderline{
+        text-decoration: underline;
+        font-size: 26px;
+
+    }
+
+    &__card{
+        display: flex;
+        flex-direction: column;
+        // align-items: center;
+    }
+
+
+    &__main-image{
+        height: 193px;
+        width: 179px;
+    }
+
+    &__subheader{
+        color:  #808080;
+        font-size: 30px;
+        // font-family: 'Roboto Light';
+    }
+
+    &__productName{
+        font-family: 'Lush Handwritten WLat';
+        font-size: 26px;
+
+    }
+
+    &__text{
+        font-size: 16px;
+        color: $buttonBackground;
+    }
+
+    &__text--small{
+        font-family: 'Roboto Light';
+
+    }
+    &__imageContainer{
+        display: flex;
+    }
+
+    &__card-container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
