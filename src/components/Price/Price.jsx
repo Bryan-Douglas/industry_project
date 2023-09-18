@@ -1,0 +1,30 @@
+import React from "react";
+import "./Price.scss";
+import BackArrow from "../../assets/images/backarrow.svg";
+import { useNavigate } from "react-router-dom";
+
+function Price() {
+  const navigate = useNavigate();
+  const goBack = () => {
+    navigate(-1);
+  };
+  return (
+    <div className="price-section">
+      <h1 className="price-section__header">Price point?</h1>
+      <div className="price-section__wrapper">
+        <div onClick={goBack} className="skin-section__arrow-wrapper">
+          <img src={BackArrow} alt="back arrow" />
+          <p className="skin-section__arrow-text">Back</p>
+        </div>
+        <ul className="price-section__list-container">
+          <li className="price-section__list-item">$5-10</li>
+          <li className="price-section__list-item">$10-25</li>
+          <li className="price-section__list-item">$25-50</li>
+          <li className="price-section__list-item">$50-100</li>
+        </ul>
+      </div>
+    </div>
+  );
+}
+
+export default Price;

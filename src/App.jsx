@@ -5,6 +5,7 @@ import Welcome from './components/Welcome/WelcomeSection';
 import Skin from './components/Skin/SkinSection';
 import SkinNeeds from './components/SkinNeeds/SkinNeeds';
 import Scent from './components/Scent/Scent';
+import Price from './components/Price/Price';
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
       <Route path="/skin" element={<Skin   />} />
       <Route path="/skin-needs" element={<SkinNeeds   />} />
       <Route path="/scent" element={<Scent   />} />
+      <Route path="/price" element={<Price  />} />
     </Routes>
     </BrowserRouter>
     </div>

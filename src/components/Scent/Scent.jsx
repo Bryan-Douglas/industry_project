@@ -42,7 +42,7 @@ function Scent() {
     <img src={Floral} className="skin-section__image--radius"></img>
       <p className="skin-section__subheader">Oily</p>
     </div>
-    <Link to="/scent">
+    <Link to="/price">
     <div  className="skin-section__arrow-wrapper">
       <img src={NextArrow} alt="next arrow" />
       <p className="skin-section__arrow-text">Next</p>
