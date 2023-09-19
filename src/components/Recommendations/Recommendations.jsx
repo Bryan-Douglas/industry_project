@@ -41,6 +41,7 @@ function Recommendations() {
           </p>
         </div>
         <div className="recommendations-section__card-container">
+            <Link to="/ultrabland">
           <div className="recommendations-section__card">
             <div className="recommendations-section__card-top">
             <h2 className="recommendations-section__subheader">Step 1</h2>
@@ -109,6 +110,7 @@ function Recommendations() {
             </div>
             </div>
           </div>
+          </Link>
           <div className="recommendations-section__card">
           <div className="recommendations-section__card-top">
             <h2 className="recommendations-section__subheader">Step 2</h2>

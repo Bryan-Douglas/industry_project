@@ -10,9 +10,9 @@ function ProductDetails() {
     };
   return (
     <div className="productDetails-section">
-          <div onClick={goBack} className="skin-section__arrow-wrapper recommendations__arrow-wrapper">
-        <img src={BackArrow} alt="back arrow" />
-        <p className="skin-section__arrow-text">Back</p>
+          <div onClick={goBack} className=" productDetails-section__arrow-wrapper">
+        <img src={BackArrow} alt="back arrow" className="productDetails-section__back-arrow" />
+        <p className="productDetails-section__arrow-text">Back</p>
       </div>
         
     </div>

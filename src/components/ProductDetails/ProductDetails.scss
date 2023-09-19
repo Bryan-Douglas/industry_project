@@ -1,0 +1,28 @@
+@use '../../styles/variables' as *;
+@use '../../styles/fonts' as *;
+
+
+.productDetails-section{
+
+    margin-top: 2rem;
+    padding-left: 36px;
+
+    &__arrow-wrapper{
+        display: flex;
+        align-items: center;
+        // justify-content: space-around;
+    }
+
+    &__back-arrow{
+      height: 2rem;
+    //   color: #808080;
+    }
+
+    &__arrow-text{
+        color: #808080;
+        letter-spacing: 0.48px;
+        font-size: 24px;
+        padding-left: 1rem;
+    }
+
+}
