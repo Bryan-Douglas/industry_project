@@ -1,7 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 import "./SkinSection.scss";
 import BackArrow from "../../assets/images/backarrow.svg";
 import { useNavigate } from "react-router-dom";
+import NormalSkin from "../../assets/images/skin-type/normal_skin-type.png";
+import SensitiveSkin from "../../assets/images/skin-type/sensitive_skin-type.png";
+import DrySkin from "../../assets/images/skin-type/dry_skin-type.png";
+import NextArrow from "../../assets/images/nextarrow.svg";
+import OilySkin from "../../assets/images/skin-type/oily_skin-type.png";
+import ComboSkin from "../../assets/images/skin-type/combination_skin-type.png";
+import { Link } from "react-router-dom";
 import CustomProgressBar from "../ProgessBar/ProgressBar";
 
 function Skin() {
