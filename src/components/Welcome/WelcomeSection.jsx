@@ -1,24 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
 import Hair from "../../assets/images/haircare_welcome_back.png";
 import Skincare from "../../assets/images/skincare_welcome_back.png";
 import Bath from "../../assets/images/bath_welcome_back.png";
 import BackArrow from "../../assets/images/backarrow.svg";
+import CustomProgressBar from "../ProgessBar/ProgressBar";
 import { useNavigate } from "react-router-dom";
 import "./WelcomeSection.scss";
 import { Link } from "react-router-dom";
 
 function Welcome() {
+  const navigate = useNavigate();
+  const goBack = () => {
+    navigate(-1);
+  };
 
-  const navigate = useNavigate()
-  const goBack = () =>{ navigate(-1)}
+  const [progress, setProgress] = useState(0);
 
+  const handleOptionSelect = () => {
+    if (progress < 100) {
+      setProgress(progress + 20);
+    }
+  };
 
   return (
     <div className="welcome-section">
+      <CustomProgressBar stepPercentage={progress} />
       <h1 className="welcome-section__header">Pick your category</h1>
 
       <div className="welcome-section__card-container">
-        
         <div onClick={goBack} className="welcome-section__backArrow-wrapper">
           <img src={BackArrow} alt="" />
           <p className="welcome-section__back">Back</p>
@@ -33,7 +42,12 @@ function Welcome() {
             />
           </div>
           <div className="welcome-section__button-wrapper">
-            <button className="welcome-section__button">Haircare</button>
+            <button
+              className="welcome-section__button"
+              onClick={handleOptionSelect} 
+            >
+              Haircare
+            </button>
           </div>
         </div>
         <div className="welcome-section__card">
@@ -45,9 +59,9 @@ function Welcome() {
             />
           </div>
           <Link to="/skin">
-          <div className="welcome-section__button-wrapper">
-            <button className="welcome-section__button">Skincare</button>
-          </div>
+            <div className="welcome-section__button-wrapper">
+              <button className="welcome-section__button">Skincare</button>
+            </div>
           </Link>
         </div>
         <div className="welcome-section__card">
@@ -59,7 +73,12 @@ function Welcome() {
             />
           </div>
           <div className="welcome-section__button-wrapper">
-            <button className="welcome-section__button">Bath</button>
+            <button
+              className="welcome-section__button"
+              onClick={handleOptionSelect} 
+            >
+              Bath
+            </button>
           </div>
         </div>
       </div>
@@ -68,3 +87,4 @@ function Welcome() {
 }
 
 export default Welcome;
+
