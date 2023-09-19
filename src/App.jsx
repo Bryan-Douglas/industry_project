@@ -10,6 +10,7 @@ import Results from './components/Results/Results';
 import Recommendations from './components/Recommendations/Recommendations';
 import Detail from './components/Detail/Detail';
 import ThankYou from './components/ThankYou/ThankYou';
+import ProductDetails from './components/ProductDetails/ProductDetails';
 
 function App() {
 
@@ -28,6 +29,7 @@ function App() {
       <Route path="/recommendations" element={<Recommendations />} />
       <Route path="/detail" element={<Detail />}/>
       <Route path="/thankyou" element={<ThankYou />}/>
+      <Route path="/ultrabland" element={<ProductDetails />}/>
     </Routes>
     </BrowserRouter>
     </div>
