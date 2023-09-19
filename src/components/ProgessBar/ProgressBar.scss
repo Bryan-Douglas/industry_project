@@ -8,12 +8,12 @@
         width: 2rem;
         height: 2rem;
         margin: 5rem 5rem;
-        border: 2px solid grey;
+        border: 2px solid #dedede;
         border-radius: 50%;
-        background-color: #fff;
+        background-color: #ffffff;
 
         &.accomplished {
-            background-color: magenta;
+            background-color: pink;
         }
 
         &::before {
@@ -21,17 +21,17 @@
             position: absolute;
             top: 50%;
             left: 100%;
-            width: 10.1rem; 
+            width: 10.15rem; 
             height: 2px;
-            background-color: grey;
+            background-color: #dedede;
             transform: translateY(-50%);
         }
 
         &.accomplished::before {
-            background-color: magenta;
+            background-color: pink;
         }
         &.accomplished::after {
-            background-color: magenta;
+            background-color: pink;
         }
     }
 }

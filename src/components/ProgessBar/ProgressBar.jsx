@@ -7,7 +7,6 @@ const CustomProgressBar = ({ stepPercentage }) => {
         <div className="custom-progress-bar">
         <ProgressBar
             percent={stepPercentage}
-            filledBackground="linear-gradient(to right, #fefb72, #f0bb31)"
         >
             <Step>
                 {({ accomplished }) => (
