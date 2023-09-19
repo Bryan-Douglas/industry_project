@@ -27,7 +27,7 @@ function Recommendations() {
     <>
     <div className="recommendations-sectionE">
     <div className="recommendations-section">
-      <div onClick={goBack} className="skin-section__arrow-wrapper">
+      <div onClick={goBack} className="skin-section__arrow-wrapper recommendations__arrow-wrapper">
         <img src={BackArrow} alt="back arrow" />
         <p className="skin-section__arrow-text">Back</p>
       </div>
@@ -42,12 +42,15 @@ function Recommendations() {
         </div>
         <div className="recommendations-section__card-container">
           <div className="recommendations-section__card">
+            <div className="recommendations-section__card-top">
             <h2 className="recommendations-section__subheader">Step 1</h2>
             <img
               src={UltraBland}
               alt="Ultrabland cleanser"
               className="recommendations-section__main-image"
             />
+            </div>
+            <div className="recommendations-section__card-bottom">
             <div className="recommendations-section__productNameWrapper">
               <h3 className="recommendations-section__productName">
                 Ultrabland
@@ -104,14 +107,18 @@ function Recommendations() {
                 className="recommendations-section__addCart"
               />
             </div>
+            </div>
           </div>
           <div className="recommendations-section__card">
+          <div className="recommendations-section__card-top">
             <h2 className="recommendations-section__subheader">Step 2</h2>
             <img
               src={PumpkinMask}
               alt="Ultrabland cleanser"
               className="recommendations-section__main-image"
             />
+            </div>
+              <div className="recommendations-section__card-bottom">
             <div className="recommendations-section__productNameWrapper">
               <h3 className="recommendations-section__productName">
                 MR Pumpkin Face
@@ -168,14 +175,18 @@ function Recommendations() {
                 className="recommendations-section__addCart"
               />
             </div>
+            </div>
           </div>
           <div className="recommendations-section__card">
+          <div className="recommendations-section__card-top">
             <h2 className="recommendations-section__subheader">Step 3</h2>
             <img
               src={SkinDrink}
               alt="Ultrabland cleanser"
               className="recommendations-section__main-image"
             />
+            </div>
+              <div className="recommendations-section__card-bottom">
             <div className="recommendations-section__productNameWrapper">
               <h3 className="recommendations-section__productName">
                 Skin Drink
@@ -235,12 +246,13 @@ function Recommendations() {
                 className="recommendations-section__addCart"
               />
             </div>
+            </div>
           </div>
         </div>
         
       </div>
       <Link to="/price">
-        <div className="skin-section__arrow-wrapper">
+        <div className="skin-section__arrow-wrapper recommendations__arrow-wrapper">
           <img src={NextArrow} alt="next arrow" />
           <p className="skin-section__arrow-text">Next</p>
         </div>
