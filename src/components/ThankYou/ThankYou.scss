@@ -1,0 +1,32 @@
+@use '../../styles/variables' as *;
+
+
+.thanks-section{
+    background-color: $secondaryBackground;
+    height: 834px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    &__header{
+        font-size: 53px;
+        margin-bottom: 2rem;
+    }
+
+    &__text{
+        font-size: 26px;
+        color: $secondaryFontColor;
+    }
+
+    &__button{
+        width: 45rem;
+        height: 5rem;
+        background-color: $buttonBackground;
+        color: white;
+        font-size: 36px;
+        letter-spacing: 3.6px;
+        margin-top: 3rem;
+    }
+
+}

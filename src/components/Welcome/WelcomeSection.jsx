@@ -3,7 +3,6 @@ import Hair from "../../assets/images/haircare_welcome_back.png";
 import Skincare from "../../assets/images/skincare_welcome_back.png";
 import Bath from "../../assets/images/bath_welcome_back.png";
 import BackArrow from "../../assets/images/backarrow.svg";
-import CustomProgressBar from "../ProgessBar/ProgressBar";
 import { useNavigate } from "react-router-dom";
 import "./WelcomeSection.scss";
 import { Link } from "react-router-dom";
@@ -14,17 +13,10 @@ function Welcome() {
     navigate(-1);
   };
 
-  const [progress, setProgress] = useState(0);
 
-  const handleOptionSelect = () => {
-    if (progress < 100) {
-      setProgress(progress + 20);
-    }
-  };
 
   return (
     <div className="welcome-section">
-      <CustomProgressBar stepPercentage={progress} />
       <h1 className="welcome-section__header">Pick your category</h1>
 
       <div className="welcome-section__card-container">
@@ -43,8 +35,7 @@ function Welcome() {
           </div>
           <div className="welcome-section__button-wrapper">
             <button
-              className="welcome-section__button"
-              onClick={handleOptionSelect} 
+              className="welcome-section__button" 
             >
               Haircare
             </button>
@@ -75,7 +66,6 @@ function Welcome() {
           <div className="welcome-section__button-wrapper">
             <button
               className="welcome-section__button"
-              onClick={handleOptionSelect} 
             >
               Bath
             </button>
