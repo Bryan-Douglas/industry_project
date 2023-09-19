@@ -37,6 +37,8 @@
         font-size: 22px;
        
         color: $grayFontColor;
+        font-family: 'Roboto Light';
+        letter-spacing: 0.99px;
 
         
     }
@@ -50,6 +52,7 @@
     &__card{
         display: flex;
         flex-direction: column;
+        margin-top: -7rem;
         // align-items: center;
     }
 
@@ -147,4 +150,19 @@
         font-family: 'Roboto Bold';
   
     }
+    &__card-bottom{
+        background-color: #F4F2F4;
+        padding: 24px;
+        padding-top: 7rem;
+    }
+
+    &__card-top{
+        position: relative;
+        top: 6rem;
+        left: 2rem;
+    }
+}
+
+.recommendations__arrow-wrapper{
+    margin-top: 13rem;
 }
