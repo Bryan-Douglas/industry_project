@@ -253,12 +253,11 @@ function Recommendations() {
         </div>
         
       </div>
-      <Link to="/price">
         <div className="skin-section__arrow-wrapper recommendations__arrow-wrapper">
           <img src={NextArrow} alt="next arrow" />
-          <p className="skin-section__arrow-text">Next</p>
+          <p className="skin-section__arrow-text">More</p>
         </div>
-      </Link>
+      
       
     </div>
     <div className="recommendations-section__button-wrapper">

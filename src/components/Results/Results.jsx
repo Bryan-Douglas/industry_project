@@ -10,7 +10,7 @@ function Results() {
         <p className="results-section__text">Based on your answers, we’ve made your ideal skincare routine.</p>
 
         <div className="results-section__buttonWrapper">
-        <Link to="/thankyou">
+        <Link to="/recommendations">
             <button className="results-section__button">SHOW MY RESULTS</button>
             </Link>
         </div>
