@@ -2,59 +2,83 @@
 @use '../../styles/fonts' as *;
 
 .cart {
-    padding: 20px;
-  
-    &__header {
+  padding: 20px;
+
+  &__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    
+
+    &__text {
       display: flex;
-      align-items: center;
-      margin-bottom: 1rem;
-      &__text {
-        display: flex;
-        justify-content: center;
-        font-size: 1.5rem;
-        margin-left: 15rem;
-      }
-  
-      img {
-        width: 30px;
-        height: 30px;
-        margin-right: 10px;
-        cursor: pointer;
-      }
+      justify-content: center;
+      font-size: 1.5rem;
+      margin-left: 8rem;
     }
-  
-    &__item {
+
+    img {
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    height: 15rem;
+    width: 33rem;
+    border: solid 1rem white;
+    background-color: $itemGray;
+
+    &-size {
+      color: $grayFontColor;
+      font-size: 1rem;
+      margin-left: 2.5rem;
+    }
+
+    &-details {
       display: flex;
       flex-direction: column;
-      height: 20rem;
-      width: 40rem;
-      border: solid 1rem white;
-      background-color: lightgray;
-      &-size {
-          color: $grayFontColor;
-          font-size: 1rem;
-        }
-        &-details {
-        display: inline;
+      margin-left: 11rem;
+
     }
+
     &-name {
       font-family: 'Lush Handwritten WLat';
-      }
-      &-category {
-        color: $grayFontColor;
-      }
-      &-quantity {
-        font-family: "Roboto-Regular";
-      }
-      &-total {
-        font-family: "Roboto-Bold";
-      }
+      margin-top: -8.3rem;
+      font-size: 2rem;
+    }
 
-      
+    &-category {
+      color: $grayFontColor;
+      letter-spacing: 2px;
+    }
 
-  
-        img {
-          width: 7rem;
-        }
-      }
+    &-quantity {
+      font-family: "Roboto-Regular";
+      margin-top: 3rem;
+    }
+
+    &-total {
+      font-family: "Roboto-Bold";
+      margin-left: 15rem;
+      margin-top: -1rem;
+      font-size: 1.3rem;
+    }
+
+    img {
+      width: 7rem;
+      margin-left: 1rem;
+      margin-top: 1rem;
+    }
   }
+.cart__arrow {
+    color: #808080;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-left: -.3rem;
+}
+}

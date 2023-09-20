@@ -16,6 +16,7 @@ function Cart() {
         <Link to="/recommendations">
           <img src={BackArrow} alt="Back to Recommendations" />
         </Link>
+        <p className="cart__arrow">Back</p>
         <p className="cart__header__text">MY BAG (3)</p>
       </div>
       <div className="cart__container">
@@ -24,7 +25,7 @@ function Cart() {
           <p className="cart__item-size">200 ml</p>
           <div className="cart__item-details">
             <p className="cart__item-name">UltraBland</p>
-            <p className="cart__item-category">Cleanser</p>
+            <p className="cart__item-category">CLEANSER</p>
             <p className="cart__item-quantity">Qty: 1</p>
             <p className="cart__item-total">$23.00</p>
           </div>
@@ -35,7 +36,7 @@ function Cart() {
           <p className="cart__item-size">200 ml</p>
           <div className="cart__item-details">
             <p className="cart__item-name">Mr Pumpkin Face</p>
-            <p className="cart__item-category">Mask</p>
+            <p className="cart__item-category">MASK</p>
             <p className="cart__item-quantity">Qty: 1</p>
             <p className="cart__item-total">$14.50</p>
           </div>
@@ -46,7 +47,7 @@ function Cart() {
           <p className="cart__item-size">200 ml</p>
           <div className="cart__item-details">
             <p className="cart__item-name">Skin Drink</p>
-            <p className="cart__item-category">Moisturizer</p>
+            <p className="cart__item-category">MOISTURIZER</p>
             <p className="cart__item-quantity">Qty: 1</p>
             <p className="cart__item-total">$14.50</p>
           </div>
