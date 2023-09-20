@@ -9,6 +9,7 @@
     &__arrow-wrapper {
         display: flex;
         align-items: center;
+        cursor: pointer;
         // justify-content: space-around;
     }
 
@@ -62,6 +63,7 @@
         .productDetails-tryMe {
             height: 6.25rem;
             width: 12.5rem;
+            cursor: pointer;
         }
     }
 

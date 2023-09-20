@@ -6,13 +6,18 @@ import Ultrabland from '../../assets/images/ultrabland.png';
 import RoseWater from '../../assets/images/rosewater.png';
 import AlmondOil from '../../assets/images/almondoil.png';
 import Honey from '../../assets/images/honey.png';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 
 function ProductDetails() {
   const navigate = useNavigate();
   const goBack = () => {
     navigate(-1);
   };
+
+  const GoCart = () => {
+    navigate('/cart')
+  };
+  
   return (
     <>
       <section className="productDetails-section">
@@ -27,7 +32,9 @@ function ProductDetails() {
             <h1 className='productDetails-title'>ULTRABLAND</h1>
             <h2 className='productDetails-subtitle'>FACE CLEANSER</h2>
           </div>
+          <Link to='/detail'>
           <img className='productDetails-tryMe' src={TryMe} alt='try me!' />
+          </Link>
         </div>
         <article className='productDetails-article__container'>
           <div className='productDetails-article__wrapper'>
@@ -65,7 +72,7 @@ function ProductDetails() {
                 <p className='productDetails-ingredient__description'>Moisturizing</p>
               </div>
             </div>
-            <button className='productDetails-button' type='submit'>ADD TO CART</button>
+            <button className='productDetails-button' type='submit' onClick={GoCart}>ADD TO CART</button>
         </section>
       </section>
     </>
