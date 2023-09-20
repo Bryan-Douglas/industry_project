@@ -13,6 +13,7 @@ import ThankYou from './components/ThankYou/ThankYou';
 import ProductDetails from './components/ProductDetails/ProductDetails';
 import Cart from './components/Cart/Cart';
 import Pay from './components/Pay/Pay';
+import GuestCheckout from './components/GuestCheckout/GuestCheckout';
 
 function App() {
 
@@ -34,6 +35,7 @@ function App() {
       <Route path="/ultrabland" element={<ProductDetails />}/>
       <Route path="/cart" element={<Cart />}/>
       <Route path="/pay" element={<Pay />}/>
+      <Route path="/guestcheckout" element={<GuestCheckout />}/>
     </Routes>
     </BrowserRouter>
     </div>
