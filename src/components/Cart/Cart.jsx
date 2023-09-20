@@ -51,8 +51,22 @@ function Cart() {
             <p className="cart__item-quantity">Qty: 1</p>
             <p className="cart__item-total">$14.50</p>
           </div>
+          <div className="cart__footer">
+        <div className="cart__totals">
+          <div className="cart__total-item">
+            <p className="cart__total-sub">Subtotal</p>
+            <p className="cart__total-tax">Tax</p>
+            <p className="cart__total-price">Total</p>
+          </div>
+          <div className="cart__total-item">
+            <p className="cart__total-sub">$82.50</p>
+            <p className="cart__total-tax1">$8.30</p>
+            <p className="cart__total-price">$90.80</p>
+          </div>
         </div>
       </div>
+    </div>
+    </div>
     </div>
   );
 }
