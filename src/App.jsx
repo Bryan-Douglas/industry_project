@@ -11,6 +11,7 @@ import Recommendations from './components/Recommendations/Recommendations';
 import Detail from './components/Detail/Detail';
 import ThankYou from './components/ThankYou/ThankYou';
 import ProductDetails from './components/ProductDetails/ProductDetails';
+import Cart from './components/Cart/Cart';
 
 function App() {
 
@@ -30,6 +31,7 @@ function App() {
       <Route path="/detail" element={<Detail />}/>
       <Route path="/thankyou" element={<ThankYou />}/>
       <Route path="/ultrabland" element={<ProductDetails />}/>
+      <Route path="/cart" element={<Cart />}/>
     </Routes>
     </BrowserRouter>
     </div>
