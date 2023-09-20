@@ -16,7 +16,10 @@ function Welcome() {
 
 
   return (
+    <div>
+         <p className="page-number">1/5</p>
     <div className="welcome-section">
+   
       <h1 className="welcome-section__header">Pick your category</h1>
 
       <div className="welcome-section__card-container">
@@ -72,6 +75,7 @@ function Welcome() {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }

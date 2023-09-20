@@ -1,6 +1,6 @@
 .welcome-section{
 
-margin-top: 10rem;
+margin-top: 5rem;
     
     &__card-container{
         display: flex;
@@ -43,4 +43,11 @@ margin-top: 10rem;
         flex-direction: column;
         align-items: center;
     }
+}
+
+.page-number{
+    font-size: 53px;
+    margin-top: 2.5rem;
+    text-align: center;
+    color: #4D4D4D;
 }

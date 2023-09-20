@@ -1,11 +1,12 @@
 @use '../../styles/variables' as *;
 
 .price-section{
-    margin-top: 10rem;
+    margin-top: 5rem;
     display: flex;
     // flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    width: 90%;
 
 
 &__list-container{
@@ -27,7 +28,7 @@
         background-color: $buttonBackground ;
         font-size: 36px;
         color: white;
-        width: 40rem;
+        width: 47rem;
         height: 5rem;
         display: flex;
         justify-content: center;
@@ -39,8 +40,12 @@
     &__wrapper{
         display: flex;
         align-items: center;
-      
         width: 100%;
-        justify-content: space-evenly;
+        
+        margin-top: 4rem;
+    }
+
+    &__arrow-wrapper{
+        margin-top: 3rem;
     }
 }

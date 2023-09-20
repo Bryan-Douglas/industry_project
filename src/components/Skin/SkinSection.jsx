@@ -21,6 +21,8 @@ function Skin() {
 
 
   return (
+    <div>
+        <p className="page-number">2/5</p>
     <div className="skin-section">
       <div onClick={goBack} className="skin-section__arrow-wrapper">
         <img src={BackArrow} alt="back arrow" />
@@ -45,7 +47,7 @@ function Skin() {
               <img src={SensitiveSkin} className="skin-section__image"></img>
             </div>
             <div className="skin-section__card">
-              <img src={DrySkin} className="skin-section__image"></img>
+              <img src={ComboSkin} className="skin-section__image"></img>
             </div>
           
         </div>
@@ -56,6 +58,7 @@ function Skin() {
           <p className="skin-section__arrow-text">Next</p>
         </div>
       </Link>
+    </div>
     </div>
   );
 }

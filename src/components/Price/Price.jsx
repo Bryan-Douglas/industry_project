@@ -10,8 +10,10 @@ function Price() {
     navigate(-1);
   };
   return (
+    <div>
+            <p className="page-number">5/5</p>
     <div className="price-section">
-      <div onClick={goBack} className="skin-section__arrow-wrapper">
+      <div onClick={goBack} className="skin-section__arrow-wrapper price-section__arrow-wrapper">
         <img src={BackArrow} alt="back arrow" />
         <p className="skin-section__arrow-text">Back</p>
       </div>
@@ -29,6 +31,7 @@ function Price() {
           </ul>
         </div>
       </div>
+    </div>
     </div>
   );
 }
