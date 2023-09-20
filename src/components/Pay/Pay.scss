@@ -1,0 +1,43 @@
+@use '../../styles/variables' as *;
+@use '../../styles/fonts' as *;
+
+.pay-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .pay-title {
+        font-size: 5rem;
+        font-family: 'roboto light';
+        margin-bottom: 4rem;
+    }
+
+    .pay-button {
+        background-color: $buttonBackground;
+            color: white;
+            height: 4.375rem;
+            width: 31.25rem;
+            font-family: 'roboto light';
+            font-size: 1.125rem;
+            letter-spacing: 0.0938rem;
+            cursor: pointer;
+            margin: .75rem;
+    }
+
+    .pay-restart {
+        text-decoration: underline;
+        font-size: 1.125rem;
+        color: #808080;
+        font-family: 'roboto light';
+        cursor: pointer;
+        margin-top: 2rem;
+    }
+
+    .pay-text {
+        font-size: 1rem;
+        color: #808080;
+        font-family: 'roboto light';
+        margin-top: 1rem;
+    }
+
+}

@@ -12,6 +12,7 @@ import Detail from './components/Detail/Detail';
 import ThankYou from './components/ThankYou/ThankYou';
 import ProductDetails from './components/ProductDetails/ProductDetails';
 import Cart from './components/Cart/Cart';
+import Pay from './components/Pay/Pay';
 
 function App() {
 
@@ -32,6 +33,7 @@ function App() {
       <Route path="/thankyou" element={<ThankYou />}/>
       <Route path="/ultrabland" element={<ProductDetails />}/>
       <Route path="/cart" element={<Cart />}/>
+      <Route path="/pay" element={<Pay />}/>
     </Routes>
     </BrowserRouter>
     </div>
