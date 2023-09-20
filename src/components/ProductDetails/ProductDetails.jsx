@@ -17,7 +17,7 @@ function ProductDetails() {
   const GoCart = () => {
     navigate('/cart')
   };
-  
+
   return (
     <>
       <section className="productDetails-section">
@@ -47,7 +47,7 @@ function ProductDetails() {
               <li>Rose water calms and soothes</li>
             </ul>
           </div>
-          <img className='productDetails-article__image' src={Ultrabland} alt='ultrabrand face cleanser'></img>
+          <img className='productDetails-article__image' src={Ultrabland} alt='ultrabland face cleanser'></img>
         </article>
         <section className='productDetails-ingredients__container'>
             <div className='productDetails-ingredients__titlesWrapper'>
