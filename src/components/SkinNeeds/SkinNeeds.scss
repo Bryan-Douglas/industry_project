@@ -1,7 +1,12 @@
 .skin-section {
+
   &__image--radius {
     border-radius: 100px;
     height: 192px;
+    &:active{
+        border: pink;
+
+    }
   }
   &__subtitle {
     text-align: center;
