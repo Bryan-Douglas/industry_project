@@ -77,13 +77,14 @@
     &-quantity {
       font-family: "Roboto-Regular";
       margin-top: 3rem;
+      font-size: 26px;
     }
 
     &-total {
       font-family: "Roboto-Bold";
       margin-left: 15rem;
-      margin-top: -1rem;
-      font-size: 1.3rem;
+      margin-top: -2rem;
+      font-size: 30px;
     }
 
     img {
@@ -118,18 +119,21 @@
       &-sub {
         font-weight: 200;
         margin-bottom: 1rem;
+        font-size: 24px;
       }
       &-tax {
         font-weight: 200;
         margin-bottom: 1rem;
+        font-size: 24px;
       }
       &-tax1 {
         padding-left: .59rem;
         font-weight: 200;
         margin-bottom: 1rem;
+        font-size: 24px;
       }
       &-price {
-        font-size: 1rem;
+        font-size: 30px;
       }
     }
   }

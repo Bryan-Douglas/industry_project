@@ -7,8 +7,15 @@ import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import Pay from "../Pay/Pay";
 import "./Cart.scss";
+import { useState } from "react";
+import GuestCheckout from "../GuestCheckout/GuestCheckout";
 
 function Cart() {
+  const [showGuestCheckout, setShowGuestCheckout] = useState(false);
+
+  const handlePayNowClick = () => {
+    setShowGuestCheckout(true);
+  };
   const navigate = useNavigate();
 
   return (
@@ -23,9 +30,10 @@ function Cart() {
       </div>
       <div className="cart__container">
         <div className="cart__item">
+          <div className="cart__item-imageWrapper">
           <img src={UltraBland} alt="Ultra Bland" />
-       
           <p className="cart__item-size">200 ml</p>
+          </div>
           <div className="cart__item-details">
             <p className="cart__item-name">UltraBland</p>
            
@@ -36,8 +44,10 @@ function Cart() {
         </div>
 
         <div className="cart__item">
+        <div className="cart__item-imageWrapper">
           <img src={PumpkinMask} alt="Pumpkin Mask" />
           <p className="cart__item-size">200 ml</p>
+          </div>
           <div className="cart__item-details">
             <p className="cart__item-name">Mr Pumpkin Face</p>
             <p className="cart__item-category">MASK</p>
@@ -47,8 +57,10 @@ function Cart() {
         </div>
 
         <div className="cart__item">
+        <div className="cart__item-imageWrapper">
           <img src={SkinDrink} alt="Skin Drink" />
           <p className="cart__item-size">200 ml</p>
+          </div>
           <div className="cart__item-details">
             <p className="cart__item-name">Skin Drink</p>
             <p className="cart__item-category">MOISTURIZER</p>
@@ -73,7 +85,11 @@ function Cart() {
     </div>
   
     </div>
-    <Pay />
+    {showGuestCheckout ? (
+        <GuestCheckout />
+      ) : (
+    <Pay onPayNowClick={handlePayNowClick} />
+    )}
     </div>
   );
 }
