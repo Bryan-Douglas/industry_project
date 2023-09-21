@@ -21,7 +21,7 @@ import Skin from "../Skin/SkinSection";
 function Recommendations() {
   const navigate = useNavigate();
   const goBack = () => {
-    navigate(-1);
+    navigate('/results');
   };
   return (
     <>

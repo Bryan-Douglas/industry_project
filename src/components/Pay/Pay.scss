@@ -5,10 +5,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    background-color: #F4F2F4;
+    padding-left: 4rem;
+    padding-right: 4rem;
 
     .pay-title {
-        font-size: 5rem;
-        font-family: 'roboto light';
+        font-size: 34px;
+        font-family: 'Roboto Bold';
         margin-bottom: 4rem;
     }
 
@@ -16,9 +20,9 @@
         background-color: $buttonBackground;
             color: white;
             height: 4.375rem;
-            width: 31.25rem;
-            font-family: 'roboto light';
-            font-size: 1.125rem;
+            width: 19rem;
+         
+            font-size: 24px;
             letter-spacing: 0.0938rem;
             cursor: pointer;
             margin: .75rem;
@@ -26,7 +30,7 @@
 
     .pay-restart {
         text-decoration: underline;
-        font-size: 1.125rem;
+        font-size: 26px;
         color: #808080;
         font-family: 'roboto light';
         cursor: pointer;
@@ -34,7 +38,7 @@
     }
 
     .pay-text {
-        font-size: 1rem;
+        font-size: 26px;
         color: #808080;
         font-family: 'roboto light';
         margin-top: 1rem;

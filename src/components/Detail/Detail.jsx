@@ -14,7 +14,7 @@ function Detail() {
         />
       </div>
       <p className="help__text">Someone is on their way to help</p>
-      <Link to="/welcome">
+      <Link to="/recommendations">
         <button className="back-to-routine-button">Back To Routine</button>
       </Link>
     </div>
