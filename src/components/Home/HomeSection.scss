@@ -1,0 +1,74 @@
+@use "../../styles/fonts" as *;
+
+.home-section {
+  background-image: url("../../assets/images/home-background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  height: 834px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 1194px;
+
+
+  &__headerWrapper {
+    padding-top: 4rem;
+ 
+  }
+  &__header {
+    font-family: "Lush Handwritten WLat";
+    font-size: 96px;
+
+  }
+
+  &__subheaderWrapper {
+    // display: flex;
+    // justify-content: center;
+    
+  }
+
+  &__subheader {
+    font-size: 56px;
+    width: 50rem;
+    font-family: 'Roboto Bold';
+    padding-top: 4rem;
+  
+
+  }
+
+  &__textWrapper {
+    // display: flex;
+    // justify-content: center;
+    
+  }
+  &__text {
+    font-size: 26px;
+    width: 53rem;
+    margin-top: 1.5rem;
+    line-height: 26px;
+    font-family: 'Roboto Light';
+
+    &--underline{
+        text-decoration: underline;
+        padding-top: 5rem;
+       
+
+    }
+   
+  }
+  &__buttonWrapper{
+    margin-top: 4rem;
+  }
+  &__button{
+    background-color: #242424;
+    color: white;
+    padding: 20px 90px;
+    font-size: 24px;
+    letter-spacing: 2.4px;
+  
+
+    
+
+  }
+}

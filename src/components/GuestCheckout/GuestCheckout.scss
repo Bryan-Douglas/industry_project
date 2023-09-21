@@ -1,0 +1,82 @@
+@use '../../styles/variables' as *;
+@use '../../styles/fonts' as *;
+
+.checkout-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #F4F2F4;
+   
+
+    .checkout-title {
+        font-size: 34px;
+        font-family: 'roboto light';
+        margin-bottom: 2rem;
+
+        &--left{
+            // text-align: left;
+            font-family: 'roboto bold';
+        }
+    }
+
+    .checkout-subscribe__wrapper {
+        display: flex;
+        flex-direction: row;
+
+        .checkout-checkbox {
+            border-radius: 50%;
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+
+        .checkout-title__wrapper {
+            display: flex;
+            flex-direction: column;
+            width: 70%;
+            margin-left: 1rem;
+
+            .checkout-subtitle {
+                font-family: 'roboto light';
+                font-size: 22px;
+            }
+
+            .checkout-text {
+                font-family: 'roboto light';
+                font-size: 16px;
+                margin-top: 1rem;
+                color: #808080;
+            }
+        }
+    }
+
+    .checkout-button {
+        background-color: $buttonBackground;
+        color: white;
+        height: 50px;
+        width: 31.25rem;
+        // font-family: 'roboto light';
+        font-size: 24px;
+        letter-spacing: 0.0938rem;
+        cursor: pointer;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .checkout-subtitle {
+        font-family: 'roboto light';
+        font-size: 22px;
+    }
+
+    .checkout-payments {
+        height: 250px;
+        width: 500px;
+    }
+}
+
+.flex-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+}
